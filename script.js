@@ -99,7 +99,7 @@ window.addEventListener('load', function(){
             //   console.log(temp_c, condition.text,condition.icon );
 
             let renderedData = `<h2>${name}, ${country}</h2>
-            <p class="temp">${temp_c}°</p>
+            <p class="temp">${temp_c}° C</p>
             <p class="description"><img src="${condition.icon}" alt="" width="20px"> ${condition.text}</p>
             <p class="humidity">Humidity: ${humidity}%</p>
             <p class="speed">
