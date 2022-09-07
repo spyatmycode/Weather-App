@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    height: 100vh;
+    background-image: url('https://source.unsplash.com/1600x900/?nice-weather');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.search{
+    margin: 20px auto;
+    flex-direction: row;
+
+}
+
+input{
+    height: 2.5em;
+    border-radius: calc(2.5em / 2);
+    width: 250px;
+    border-radius: 1.5em;
+    outline: none;
+    border: none;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    margin-right: 2px;
+    text-align: left;
+}
+
+button.flex{
+ height: 2.5em;
+ width: 2.5em;
+ border-radius: calc(2.5em / 2);
+ border: none;
+ cursor: pointer;
+ background-color: black;
+}
+
+p{
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.container{
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border-radius: 30px;
+    color: white;
+    align-items: left;
+    max-width: 340px;
+}
+
+.container :nth-child(1){
+    align-content: center;
+    text-align: center;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+}
+
+.temp{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+h2{
+    color: dodgerblue;
+    margin-bottom: 20px;
+}

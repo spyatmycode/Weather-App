@@ -1,0 +1,8 @@
+ // xhr.onerror = function(){
+    //     var errorMessage
+    //     if(xhr.status===403 || xhr.status ===404){
+    //         errorMessage = `country data not found`
+    //     }
+
+    //     // return errorMessage
+    // }
