@@ -19,7 +19,7 @@ function getApiData(country){
     let output;
     let apiKEY = "a255820c36cc4000bd165551220709"
 
-    xhr.open('GET',`http://api.weatherapi.com/v1/current.json?key=${apiKEY}&q=${country}&aqi=yes`, true)
+    xhr.open('GET',`https://api.weatherapi.com/v1/current.json?key=${apiKEY}&q=${country}&aqi=yes`, true)
 
      xhr.onload =  function(){
        
@@ -86,7 +86,7 @@ window.addEventListener('load', function(){
     let output;
     let apiKEY = "a255820c36cc4000bd165551220709"
 
-    xhr.open('GET',`http://api.weatherapi.com/v1/current.json?key=${apiKEY}&q=${latitude},${longitude}&aqi=yes`, true)
+    xhr.open('GET',`https://api.weatherapi.com/v1/current.json?key=${apiKEY}&q=${latitude},${longitude}&aqi=yes`, true)
 
      xhr.onload =  function(){
        
