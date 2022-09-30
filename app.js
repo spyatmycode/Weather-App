@@ -105,10 +105,11 @@ window.addEventListener('load',()=>{
             weather.fetchWeather_lat_lon(latitude,longitude)
      })  
     }
-    else{
+    if(!navigator.geolocation){
         alert('Please turn on your location')
-        
-    }
+     } 
+    
+    
 })
 
 
