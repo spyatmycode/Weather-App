@@ -94,6 +94,7 @@ let weather = {
 
 
 window.addEventListener('load',()=>{
+    weatherInfoContainer.innerHTML = `<section class="loader"><img src="./assets/cloud.gif" alt=""width="50px"></section>`
     if(navigator.geolocation){
         this.navigator.geolocation.getCurrentPosition((position)=>{
             let latitude
@@ -103,6 +104,10 @@ window.addEventListener('load',()=>{
             longitude = position.coords.longitude
             weather.fetchWeather_lat_lon(latitude,longitude)
      })  
+    }
+    else{
+        alert('Please turn on your location')
+        
     }
 })
 
