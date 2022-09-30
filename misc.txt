@@ -6,3 +6,32 @@
 
     //     // return errorMessage
     // }
+
+    // J94W2YPBPD3WT87E3E848GHYT
+    //J94W2YPBPD3WT87E3E848GHYT
+    https://api.openweathermap.org/geo/1.0/direct?q=Mawere&limit=5&appid=1840716844f0e872958745ce1f0cc2b5
+
+
+    fetchWeather: function (locationName) {
+        fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${locationName}&limit=5&appid=${this.apiKey}`)
+            .then(res => res.json())
+            .then(function (data) {
+                setTimeout(() => {
+
+                    let { lat, lon } = data[0]
+
+
+
+                    // https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
+                    fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${weather.apiKey}`)
+                        .then(res => res.json())
+                        .then(function (data) {
+                            console.log(data);
+                        })
+
+
+
+
+                }, 2000)
+            })
+    },

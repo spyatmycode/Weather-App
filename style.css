@@ -50,9 +50,11 @@ button.flex{
 }
 
 p {
+    display: flex;
     text-transform: capitalize;
     font-weight: 600;
     margin-left: 20px;
+    align-items: center;
 }
 .container{
     background-color: rgba(0, 0, 0, 0.9);
@@ -61,11 +63,14 @@ p {
     color: white;
     align-items: left;
     max-width: 340px;
+    transition: all ease-in-out 0.6s;
+    box-shadow: 0 5px 10px 0 black;
 }
 
-.container :nth-child(1){
+.container :nth-child(1), .loader{
     align-content: center;
     text-align: center;
+    align-items: center;
 }
 
 footer{
@@ -81,4 +86,11 @@ footer{
 h2{
     color: dodgerblue;
     margin-bottom: 20px;
+}
+
+.loader img{
+    width: 50px;
+    border-radius:inherit;
+    background:transparent;
+    color: white;
 }

@@ -1,3 +1,15 @@
+/*
+NOTE to other developers from Nifemi: I stopped using this code because
+
+**The 'weatherapi' API expired
+**I switched over to openweathermap API
+**I started using FETCH instead of XML
+
+But I still decided to leave the code here just for references. Thank you
+
+*/
+
+
 const form = document.querySelector('form')
 const weatherInfoContainer = document.querySelector('.information')
 const input  = document.querySelector('input')
